@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    margin: 0;
+    font-size: 14px;
+}
+.container {
+    height: calc(100vh - 12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-div {
+    background-color: white;
+    width: 330px;
+    height: 480px;
+    padding: 30px 40px;
+    border-radius: 0 10px 10px 0;
+}
+.text-div h1 , .prices {
+    font-family: 'Fraunces', serif;
+}
+.text-div h1 {
+    font-size: 30px;
+}
+.text-div h3,.text-div p , button {
+    font-family: 'Montserrat', sans-serif;
+}
+.text-div h3 {
+    letter-spacing: 5px;
+    color:hsl(228, 12%, 48%);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 13px;
+    
+}
+.text-div p {
+    color:hsl(228, 12%, 48%);
+    font-weight: 400;
+}
+.image {
+    width: 330px;
+    height: 480px;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+.prices {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.prices h2 {
+    color:hsl(158, 36%, 37%);
+    font-size: 32px;
+}
+.prices h5 {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color:hsl(0, 0%, 100%);
+    padding: 15px;
+    width: 250px;
+    border-radius: 10px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+button img {
+    padding-right: 10px;
+}
+button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+@media (max-width:375px) {
+    .image {
+        width: 330px;
+        height: 480px;
+        background-image: url(./images/image-product-mobile.jpg);
+        background-size: cover;
+        border-radius: 10px 10px 0px 0px;
+    } 
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .container {
+        height: calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+    }
+    .text-div {
+        background-color: hsl(0, 0%, 100%);
+        width: 330px;
+        height: 490px;
+        padding: 15px 20px;
+        border-radius: 0 0 10px 10px;
+    }
+    .prices h2 {
+        margin:2px;
+    }
+    button {
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
